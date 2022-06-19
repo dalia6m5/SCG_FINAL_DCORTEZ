@@ -116,6 +116,68 @@
   display: none;
 }
 
+#cabecera nav {
+  background-color: #2368AD;
+}
+
+#cabecera nav div div {
+  background-color: #2368AD;
+}
+
+#cabecera .cabecera-barra {
+  /*  display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5% 5px 5%;
+        background-color: $colorSCG;   */
+  display: none;
+}
+
+#cabecera .cabecera-nav {
+  display: none;
+}
+
+#cabecera .cabecera-nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0px;
+}
+
+#cabecera .cabecera-nav ul li a {
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#cabecera .cabecera-nav ul li a:hover {
+  color: #2368AD;
+}
+
+#cabecera .cabecera-nav ul li inicio {
+  display: none;
+}
+
+#cabecera .cabecera__logo {
+  /* margin-top: 10px;  */
+  -webkit-animation-name: logo-animacion;
+          animation-name: logo-animacion;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
 #contenido #descripcion {
   background: white;
   display: -webkit-box;
@@ -618,11 +680,30 @@
   #cabecera-index .cabecera-nav-index ul li .inicio {
     display: block;
   }
+  #cabecera nav {
+    display: none;
+  }
   #cabecera .cabecera-barra {
-    -webkit-box-orient: horizontal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px 5% 5px 5%;
+    background-color: #2368AD;
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  #cabecera .cabecera-nav {
+    display: block;
   }
   #cabecera .cabecera-nav ul li .inicio {
     display: block;
