@@ -1,0 +1,59 @@
+#cabecera {
+
+    nav {
+        background-color: $colorSCG;
+
+        div {
+            div {
+                background-color: $colorSCG;
+            }
+        }
+    }
+
+    .cabecera-barra {
+       /*  display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5% 5px 5%;
+        background-color: $colorSCG;   */
+        display: none;
+    }
+
+    .cabecera-nav {
+        display: none;
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px 0px;
+
+            li {
+                a {
+                    margin: 10px;
+                    color: white;
+                    text-decoration: none;
+                    font-size: map-get($fuentes-tamanos, nav); 
+
+                    &:hover{
+                        color: $colorSCG;
+                    }
+                
+                }
+                inicio {
+                    display: none;
+                }
+            }
+        }
+    } 
+
+    .cabecera__logo {
+        /* margin-top: 10px;  */ 
+        animation-name: logo-animacion;
+        animation-duration: 1s;
+        animation-timing-function: ease-in;
+        
+    }
+}

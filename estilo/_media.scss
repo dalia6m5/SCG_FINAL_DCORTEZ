@@ -1,0 +1,127 @@
+@media (min-width: 768px) {
+
+    #cabecera-index {
+
+        nav {
+            display: none;
+        }
+
+        .cabecera-barra-index {
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 5% 5px 5%;
+            flex-direction: row; 
+        }
+
+        .cabecera-redes {
+            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; 
+            gap: 10px;
+        }
+
+        .cabecera-nav-index {
+            display: block;
+            ul {
+                li {
+                    .inicio {
+                        display: block;
+                    }
+                }
+            }
+        }  
+    
+    }
+    #cabecera {
+
+        nav {
+            display: none;
+        }
+
+       .cabecera-barra {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5% 5px 5%;
+        background-color: $colorSCG; flex-direction: row;
+        }
+
+        .cabecera-nav {
+            display: block;
+            ul{
+                li{
+                    .inicio {
+                        display: block;
+                    }
+                }
+            }
+        }
+    } 
+    
+    #contenido {
+        #servicios {
+            .servicios-iconos {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+
+    #pie {
+        .pie-contenedor {
+            flex-direction: row;
+
+            .pie-redes {
+                img {
+                    width: 30px;
+                    margin-right: 5px;
+                    margin-top: 15px;
+
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    #cabecera-index {
+        .cabecera-nav-index {
+            ul {
+                li {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    #cabecera {
+        .cabecera-nav {
+            ul {
+                li {
+                    a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    #contenido{
+        #descripcion {
+            flex-direction: row;
+        }
+
+        #servicios {
+            .servicios-iconos {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+    }
+}
