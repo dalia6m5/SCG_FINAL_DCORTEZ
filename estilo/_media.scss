@@ -68,6 +68,31 @@
                 grid-template-columns: 1fr 1fr;
             }
         }
+
+        #info {
+            .descripcion {
+                p {
+                    max-width: 700px;
+                     font-size: 22px;
+                }
+            }
+
+            .mv {
+               
+                .mv-contenido {
+    
+                    h3 {
+                        font-size: 40px;
+                    }
+    
+                    p {
+                        font-size: 22px;
+                        text-align: justify;
+                    }
+                }
+
+            }
+        }
     }
 
     #pie {
@@ -117,6 +142,49 @@
         #descripcion {
             flex-direction: row;
         }
+
+        #info {
+            .descripcion {
+                p {
+                    max-width: 900px;
+                     font-size: 24px;
+                }
+            }
+
+            .mv {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 80px;
+                margin: 50px;  
+    
+                .mv-contenido {
+                    color: $colorSCG;
+    
+                    h3 {
+                        font-size: 40px;
+                    }
+    
+                    p {
+                        font-size: 24px;
+                        text-align: justify;
+                    }
+                }
+    
+                .vision {
+                    grid-row: 2/3;
+                    grid-column: 2/3;
+                }
+    
+                .mision {
+                    h3 {
+                        text-align: right; 
+                    }
+                }
+            } 
+        }
+
+        
 
         #servicios {
             .servicios-iconos {

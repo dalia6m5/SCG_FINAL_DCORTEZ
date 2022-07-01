@@ -380,19 +380,15 @@
 }
 
 #contenido #info .descripcion p {
-  max-width: 700px;
+  max-width: 500px;
   text-align: justify;
-  font-size: 24px;
+  font-size: 22px;
   color: #2368AD;
 }
 
 #contenido #info .mv {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
   gap: 80px;
   margin: 50px;
 }
@@ -406,17 +402,8 @@
 }
 
 #contenido #info .mv .mv-contenido p {
-  font-size: 25px;
+  font-size: 20px;
   text-align: justify;
-}
-
-#contenido #info .mv .vision {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
 }
 
 #contenido #info .mv .mision h3 {
@@ -711,6 +698,17 @@
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+  #contenido #info .descripcion p {
+    max-width: 700px;
+    font-size: 22px;
+  }
+  #contenido #info .mv .mv-contenido h3 {
+    font-size: 40px;
+  }
+  #contenido #info .mv .mv-contenido p {
+    font-size: 22px;
+    text-align: justify;
+  }
   #pie .pie-contenedor {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -736,6 +734,41 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  #contenido #info .descripcion p {
+    max-width: 900px;
+    font-size: 24px;
+  }
+  #contenido #info .mv {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 80px;
+    margin: 50px;
+  }
+  #contenido #info .mv .mv-contenido {
+    color: #2368AD;
+  }
+  #contenido #info .mv .mv-contenido h3 {
+    font-size: 40px;
+  }
+  #contenido #info .mv .mv-contenido p {
+    font-size: 24px;
+    text-align: justify;
+  }
+  #contenido #info .mv .vision {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  #contenido #info .mv .mision h3 {
+    text-align: right;
   }
   #contenido #servicios .servicios-iconos {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;

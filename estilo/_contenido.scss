@@ -170,19 +170,17 @@
 
         .descripcion {
             p {
-                max-width: 700px;
+                max-width: 500px;
                 text-align: justify;
-                 font-size: 24px;
+                 font-size: 22px;
                  color: $colorSCG; 
             }
         }
         
         .mv {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
             gap: 80px;
-            margin: 50px;  
+            margin: 50px; 
 
             .mv-contenido {
                 color: $colorSCG;
@@ -192,15 +190,12 @@
                 }
 
                 p {
-                    font-size: map-get($fuentes-tamanos, parrafo-dos);
+                    font-size: map-get($fuentes-tamanos, parrafo);
                     text-align: justify;
                 }
             }
 
-            .vision {
-                grid-row: 2/3;
-                grid-column: 2/3;
-            }
+    
 
             .mision {
                 h3 {
