@@ -14,7 +14,7 @@ $mensaje .= "Este es el detalle del mensaje para su cotización: " . $_POST['det
 $mensaje .= "Enviado el  " . date('d/m/Y', time());
 
 $para = 'dalia.66.m5@gmail.com';
-$asunto = 'Solicitud de Cotización SCG'
+$asunto = 'Solicitud de Cotización SCG';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
