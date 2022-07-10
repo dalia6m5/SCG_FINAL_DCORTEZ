@@ -1,26 +1,30 @@
 <?php
-
-$nombre = $_POST["nombre"];
-$email = $_POST["email"];
-$numero = $_POST["numero"];
-$tipo = $_POST["gridRadios"];
-$detalle = $_POST["detalle"];
-
-$mensaje = "Este menesaje ha sido enviado por " . $nombre . ",\r\n";
-$mensaje .= "cuyo mail es " . $email . ",\r\n";
-$mensaje .= "y número  " . $numero . ",\r\n";
-$mensaje .= "El tipo de transporte por el que cosulta es " . $tipo . ",\r\n";
-$mensaje .= "Este es el detalle del mensaje para su cotización: " . $_POST["detalle"] . ",\r\n";
-$mensaje .= "Enviado el  " . date('d/m/Y', time());
-
-$para = "dalia.66.m5@gmail.com";
-$asunto = "Solicitud de Cotización SCG";
-
-mail($para, $asunto, utf8_decode($mensaje), $header);
-
-header('Location:gracias.html');
-
+$remitente = $_POST['email'];
+$destinatario = 'dalia.66.m5@gmail.com'; // en esta línea va el mail del destinatario.
+$asunto = 'Cotizacion SCG'; // acá se puede modificar el asunto del mail
+if (!$_POST){
 ?>
 
+<?php
+}else{
+	 
+    $cuerpo = "Nombre y apellido: " . $_POST["nombre"] . "\r\n"; 
+    $cuerpo .= "Teléfono: " . $_POST["numero"] . "\r\n";
+    $cuerpo .= "Correo: " . $_POST["email"] . "\r\n";
+    $cuerpo .= "Mensaje: " . $_POST["detalle"] . "\r\n";
+    
+	//las líneas de arriba definen el contenido del mail. Las palabras que están dentro de $_POST[""] deben coincidir con el "name" de cada campo. 
+	// Si se agrega un campo al formulario, hay que agregarlo acá.
 
+    $headers  = "MIME-Version: 1.0\n";
+    $headers .= "Content-type: text/plain; charset=utf-8\n";
+    $headers .= "X-Priority: 3\n";
+    $headers .= "X-MSMail-Priority: Normal\n";
+    $headers .= "X-Mailer: php\n";
+    $headers .= "From: \"".$_POST['nombre']." ".$_POST['apellido']."\" <".$remitente.">\n";
 
+    mail($destinatario, $asunto, $cuerpo, $headers);
+    
+    include 'gracias.html'; //se debe crear un html que confirma el envío
+}
+?>
