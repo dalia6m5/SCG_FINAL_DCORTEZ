@@ -4,4 +4,4 @@ Esta página ha sido creada para el cliente Shipping Cargo Group como parte de l
 
 ## Autora
 ***
-El diseño y desarrolo del sitio estuvo a cargo de Dalia Cortez bajo el marco del curso de Desarrollo Web de Coderhousegit a
+El diseño y desarrolo del sitio estuvo a cargo de Dalia Cortez bajo el marco del curso de Desarrollo Web de Coderhouse
